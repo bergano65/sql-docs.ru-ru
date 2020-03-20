@@ -58,9 +58,15 @@ ms.locfileid: "79287668"
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
 Создает новую таблицу в [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] и [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
-
+---
+ wrong form, should be "Базе данных SQL Azure."
+---
 > [!NOTE]
 > Синтаксис [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] см. в статье [CREATE TABLE (хранилище данных SQL Azure)](../../t-sql/statements/create-table-azure-sql-data-warehouse.md).
+---
+ should be
+ "Синтаксис для Хранилища данных SQL" 
+---
 
 ![Значок ссылки на раздел](../../database-engine/configure-windows/media/topic-link.gif "Значок ссылки на раздел") [Синтаксические обозначения в Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
 
@@ -111,7 +117,7 @@ column_name <data_type>
     [ NOT FOR REPLICATION ]
     [ GENERATED ALWAYS AS ROW { START | END } [ HIDDEN ] ]
     [ NULL | NOT NULL ]
-    [ ROWGUIDCOL ]
+    [ ROWGUIDCOL ]  
     [ ENCRYPTED WITH
         ( COLUMN_ENCRYPTION_KEY = key_name ,
           ENCRYPTION_TYPE = { DETERMINISTIC | RANDOMIZED } ,
@@ -421,8 +427,8 @@ FILESTREAM_ON { *partition_scheme_name* | filegroup | **"** default **"** } **П
 
 Если аргумент *type_schema_name* не указан, компонент [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] ссылается на аргумент *type_name* в следующем порядке:
 
-- системный тип данных [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)];
-- в установленной по умолчанию для текущего пользователя схеме в текущей базе данных;
+- Системный тип данных [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)];
+- В установленной по умолчанию для текущего пользователя схеме в текущей базе данных;
 - Схема **dbo** в текущей базе данных.
 
 Список системных типов данных, поддерживаемых оптимизированными для памяти таблицами, см. в разделе [Поддерживаемые типы данных для выполняющейся в памяти OLTP](../../relational-databases/in-memory-oltp/supported-data-types-for-in-memory-oltp.md).
